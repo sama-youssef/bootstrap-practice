@@ -1,0 +1,113 @@
+.header {
+  width: 100%;
+  margin: 0 auto !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 16px 0;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.header .col .title {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  line-height: 1;
+}
+
+@media only screen and (max-width: 422px) {
+  .header {
+    line-height: 1.5;
+  }
+}
+
+.header .btn {
+  font-size: 14px;
+}
+
+.nav {
+  overflow-x: auto;
+}
+
+.nav .nav-link {
+  color: gray;
+  text-decoration: underline;
+}
+
+.banner .text {
+  width: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+  .banner .banner {
+    padding: 24px !important;
+  }
+  .banner .text {
+    width: 100%;
+  }
+}
+
+.banner h2 {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 48px;
+}
+
+.banner h4 {
+  font-family: 'Segoe UI';
+}
+
+.banner p {
+  font-family: 'Segoe UI';
+}
+
+.featured .card-title {
+  font-family: 'Playfair Display';
+}
+
+.featured .bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+}
+
+@media only screen and (max-width: 991px) {
+  .featured svg {
+    display: none;
+  }
+}
+
+.main .content h2 {
+  font-family: 'Playfair Display';
+}
+
+.main .content .post-1 .p-border {
+  border-width: 2px !important;
+  border-color: #C8C9CA !important;
+}
+
+.main .content .buttons .btn {
+  border-radius: 2rem;
+}
+
+.main .sidebar {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 2rem;
+}
+
+.main .sidebar h6 {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: bold;
+}
+
+footer {
+  height: 144x;
+  padding: 40px;
+}
+/*# sourceMappingURL=custom.css.map */

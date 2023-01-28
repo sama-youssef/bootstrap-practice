@@ -1,0 +1,123 @@
+
+.header{
+    width:100%;
+    margin: 0 auto !important;
+    align-items: center;
+    padding: 16px 0;
+
+    a{
+      text-decoration: none;
+    }
+
+  
+    .col .title{
+      font-family: 'Playfair Display', serif;
+      font-size: 36px;
+      line-height: 1;
+    }
+
+    @media only screen and (max-width: 422px) {
+      line-height: 1.5;
+    }
+
+  .btn{
+    font-size: 14px;
+  }
+}
+
+.nav{
+  overflow-x: auto;
+
+  .nav-link{
+    color: gray;
+    text-decoration: underline;
+  }
+}
+
+.banner{
+
+  .text{
+    width: 50%;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .banner{
+      padding: 24px !important;
+    }
+    .text{
+      width: 100%;
+    }
+  }
+
+  h2{
+    font-family: 'Playfair Display', serif !important;
+    font-size: 48px;
+  }
+
+  h4{
+    font-family: 'Segoe UI';
+  }
+
+  p{
+    font-family: 'Segoe UI';
+  }
+}
+
+.featured{
+
+ .card-title{
+    font-family: 'Playfair Display';
+  }
+
+
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  } 
+
+  @media only screen and (max-width: 991px) {
+    svg{
+      display: none;
+    }
+  }
+}
+
+.main{
+  .content{
+    h2{
+      font-family: 'Playfair Display';
+    }
+  
+    .post-1{
+      .p-border{
+        border-width: 2px !important;
+        border-color: #C8C9CA !important;
+      }
+    }
+  
+    .buttons{
+      .btn{
+        border-radius: 2rem;
+      }
+    } 
+  }
+
+  .sidebar{
+    position: sticky !important;
+    top: 2rem;
+
+    h6{
+      font-family: 'Playfair Display';
+      font-style: italic;
+      font-weight: bold;
+    }
+  }
+}
+
+footer{
+  height: 144x;
+  padding:40px;
+}

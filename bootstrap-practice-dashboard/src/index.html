@@ -1,0 +1,637 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../scss/custom.css">
+   
+
+  </head>
+  
+  <body class="bg-light">
+
+    <div class="everything d-flex">
+
+      <nav class="nav flex-column sidebar p-3 float-start"> <!--bg-primary-->
+    
+        <ul class="list-unstyled navbar-nav">
+          
+          <li class="nav-item">
+            <a href="#" class="nav-link d-flex justify-content-center align align-items-center py-3 text-white">
+
+              <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#fff" class="bi bi-emoji-wink-fill" viewBox="0 0 16 16" style="margin-right: 0;">
+                  <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM7 6.5C7 5.672 6.552 5 6 5s-1 .672-1 1.5S5.448 8 6 8s1-.672 1-1.5zM4.285 9.567a.5.5 0 0 0-.183.683A4.498 4.498 0 0 0 8 12.5a4.5 4.5 0 0 0 3.898-2.25.5.5 0 1 0-.866-.5A3.498 3.498 0 0 1 8 11.5a3.498 3.498 0 0 1-3.032-1.75.5.5 0 0 0-.683-.183zm5.152-3.31a.5.5 0 0 0-.874.486c.33.595.958 1.007 1.687 1.007.73 0 1.356-.412 1.687-1.007a.5.5 0 0 0-.874-.486.934.934 0 0 1-.813.493.934.934 0 0 1-.813-.493z"/>
+                </svg>
+              </div>
+
+              <div class="name fw-bold fs-6 mx-3">SB ADMIN <sup>2</sup></div>
+            </a>
+          </li>
+
+          <hr>
+
+         
+
+          <li class="nav-item active">
+            <a href="index.html" class="nav-link"> 
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="13.6" fill="#95ABEC" class="bi bi-speedometer2" viewBox="0 0 16 16">
+                <path d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4zM3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.389.389 0 0 0-.029-.518z"/>
+                <path fill-rule="evenodd" d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10zm8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3z"/>
+              </svg>
+              Dashboard
+            </a>
+          </li>
+
+          <hr>
+
+          <p class="nav-section">INTERFACE</p>
+
+          <li class="nav-item">
+            <button class="btn btn-toggle collapsed" data-bs-toggle="collapse" data-bs-target="#components-collapse">
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="13.6" fill="#95ABEC" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+              </svg>
+              Components
+            </button>
+            <div class="collapse bg-white p-2 rounded" id="components-collapse">
+              <p class="dropdown-header">CUSTOM COMPONENTS</p>
+              <ul class="btn-toggle-nav list-unstyled fw-normal">
+                <li><a href="#" class="link-dark rounded">Buttons</a></li>
+                <li><a href="#" class="link-dark rounded">Cards</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <button class="btn btn-toggle collapsed" data-bs-toggle="collapse" data-bs-target="#utilities-collapse">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#95ABEC" class="bi bi-wrench" viewBox="0 0 16 16">
+                <path d="M.102 2.223A3.004 3.004 0 0 0 3.78 5.897l6.341 6.252A3.003 3.003 0 0 0 13 16a3 3 0 1 0-.851-5.878L5.897 3.781A3.004 3.004 0 0 0 2.223.1l2.141 2.142L4 4l-1.757.364L.102 2.223zm13.37 9.019.528.026.287.445.445.287.026.529L15 13l-.242.471-.026.529-.445.287-.287.445-.529.026L13 15l-.471-.242-.529-.026-.287-.445-.445-.287-.026-.529L11 13l.242-.471.026-.529.445-.287.287-.445.529-.026L13 11l.471.242z"/>
+              </svg>
+              Utilities
+            </button>
+            <div class="collapse bg-white p-2 rounded" id="utilities-collapse">
+              <p class="dropdown-header">CUSTOM UTILITIES</p>
+              <ul class="btn-toggle-nav list-unstyled fw-normal">
+                <li><a href="#" class="link-dark rounded">Colors</a></li>
+                <li><a href="#" class="link-dark rounded">Borders</a></li>
+                <li><a href="#" class="link-dark rounded">Animations</a></li>
+                <li><a href="#" class="link-dark rounded">Other</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <hr>
+
+          <p class="nav-section">ADDONS</p>
+
+          <li class="nav-item">
+            <button class="btn btn-toggle collapsed" data-bs-toggle="collapse" data-bs-target="#pages-collapse">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#95ABEC" class="bi bi-folder-fill" viewBox="0 0 16 16">
+                <path d="M9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.825a2 2 0 0 1-1.991-1.819l-.637-7a1.99 1.99 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3zm-8.322.12C1.72 3.042 1.95 3 2.19 3h5.396l-.707-.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139z"/>
+              </svg>
+              Pages
+            </button>
+            <div class="collapse bg-white p-2 rounded" id="pages-collapse">
+              <p class="dropdown-header">login screens</p>
+              <ul class="btn-toggle-nav list-unstyled fw-normal">
+                <li><a href="#" class="link-dark rounded">Login</a></li>
+                <li><a href="#" class="link-dark rounded">Register</a></li>
+                <li><a href="#" class="link-dark rounded">Forgot Password</a></li>
+              </ul>
+              <p class="dropdown-header">other pages:</p>
+              <ul class="btn-toggle-nav list-unstyled fw-normal">
+                <li><a href="#" class="link-dark rounded">404 Page</a></li>
+                <li><a href="#" class="link-dark rounded">Blank Page</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#95ABEC" class="bi bi-graph-up" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M0 0h1v15h15v1H0V0Zm14.817 3.113a.5.5 0 0 1 .07.704l-4.5 5.5a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61 4.15-5.073a.5.5 0 0 1 .704-.07Z"/>
+              </svg>
+              Chart
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#95ABEC" class="bi bi-table" viewBox="0 0 16 16">
+                <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 2h-4v3h4V4zm0 4h-4v3h4V8zm0 4h-4v3h3a1 1 0 0 0 1-1v-2zm-5 3v-3H6v3h4zm-5 0v-3H1v2a1 1 0 0 0 1 1h3zm-4-4h4V8H1v3zm0-4h4V4H1v3zm5-3v3h4V4H6zm4 4H6v3h4V8z"/>
+              </svg>
+              Tables
+            </a>
+          </li>
+
+          <hr>  
+        </ul>
+
+        <button type="button" class=" arrow btn rounded-circle my-3 mx-auto">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#DCE3F9" class="bi bi-chevron-left" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+          </svg>
+        </button>
+
+        <div class="card featured">
+          <div class="card-body">
+            <img src="../img/undraw_rocket.svg">
+            <p class="card-text text-center my-2"><span style="font-weight: 800;">SB Admin Pro</span> is packed with premium features, components, and more!
+            </p>
+            <a href="#" class="btn text-center py-1">
+              Upgrade to Pro!</a> <!--btn-success-->
+          </div>
+        </div>    
+
+      </nav>
+
+      <div class="container left p-0">
+        
+        <nav class="navbar navbar-light bg-white shadow p-3">
+          
+          <div class="container-fluid">
+            <div class="input-group">
+              <input type="text" class="form-control bg-light border-light" placeholder="Search for...">
+              <button class="btn btn-primary" type="button" id="button-addon2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#fff" class="bi bi-search d-block" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg>
+            </button>
+            </div>
+          </div>
+
+          <div class="notifications d-flex border-end px-4">
+            
+            <div class="dropdown me-4">
+              <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#D1D3E2" class="bi bi-bell-fill" viewBox="0 0 16 16">
+                  <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
+                </svg>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded bg-danger">
+                  3+
+                </span>
+              </button>
+              
+              <div class="dropdown-menu p-0 border-0" aria-labelledby="dropdownMenuButton1">
+                <div class="card alerts-center">
+                  <div class="card-header text-white fw-bold" style="font-size: 10.4px; background-color: #4E73DF;">
+                    ALERTS CENTER
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    
+                    <li class="list-group-item d-flex align-items-center">
+                      <div class="icon rounded-circle me-3" style="background-color: #4E73DF;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="16" fill="#fff" class="bi bi-file-earmark-text-fill" viewBox="0 0 16 16" style="display: inline-block; margin: 12px auto;">
+                          <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM4.5 9a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM4 10.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 1 0-1h4a.5.5 0 0 1 0 1h-4z"/>
+                        </svg>
+                      </div>
+                      <div class="alert p-0">
+                        <p class="date">December 12, 2019</p>
+                        <p class="notification">
+                          An new monthly deposit is ready to download!
+                        </p>
+                      </div>
+                    </li>
+
+                    <li class="list-group-item d-flex align-items-center">
+                      <div class="icon rounded-circle me-3" style="background-color:#1cc88a">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="16" fill="#fff" class="bi bi-cash-coin" viewBox="0 0 16 16" style="display: inline-block; margin: 14px auto;">
+                          <path fill-rule="evenodd" d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0z"/>
+                          <path d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1h-.003zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195l.054.012z"/>
+                          <path d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083c.058-.344.145-.678.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1H1z"/>
+                          <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 5.982 5.982 0 0 1 3.13-1.567z"/>
+                        </svg>
+                      </div>
+                      <div class="alert p-0">
+                        <p class="date">December 7, 2019</p>
+                        <p class="notification">
+                          $290.29 has been deposited into your account!
+                        </p>
+                      </div>
+                    </li>
+
+                    <li class="list-group-item d-flex align-items-center">
+                      <div class="icon rounded-circle bg-warning me-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="16" fill="#fff" class="bi bi-exclamation-triangle-fill" viewBox="0 0 16 16" style="display: inline-block; margin: 12px auto;">
+                          <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                        </svg>
+                      </div>
+                      <div class="alert p-0">
+                        <p class="date">December 2, 2019</p>
+                        <p class="notification fw-bold">
+                          Spending Alert: We've noticed unusually high spending on your account
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+
+                  <div class="card-footer bg-white text-center">
+                   <a href="#">Show All Alerts</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#D1D3E2" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                  <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+                </svg>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded bg-danger">
+                  7
+                </span>
+              </button>
+              
+              <div class="dropdown-menu p-0 border-0" aria-labelledby="dropdownMenuButton2">
+                <div class="card message-center">
+                  <div class="card-header text-white fw-bold" style="font-size: 10.4px; background-color: #4E73DF;">
+                    MESSAGE CENTER
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    
+                    <li class="list-group-item d-flex align-items-center">
+                      <div class="icon rounded-circle me-3 position-relative">
+                        <img src="../img/164-1649662_woman-icon-circle-png-transparent-png.png" class="rounded-circle">
+                        <span class="badge position-absolute top-0 start-100 translate-middle p-1 border border-white rounded-circle" style="background-color: #1cc88a;">
+                      </div>
+                      <div class="message p-0">
+                        <div class="text-message fw-bold">
+                          Hi there! I am wondering if you can help me with a problem I've been having.
+                        </div>
+                        <div class="name-time">
+                          Emily Fowler · 58m
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="list-group-item d-flex align-items-center">
+                      <div class="icon rounded-circle me-3 position-relative">
+                        <img src="../img/1600771873AwEux.png" class="rounded-circle">
+                        <span class="badge position-absolute top-0 start-100 translate-middle p-1 bg-secondary border border-white rounded-circle">
+                      </div>
+                      <div class="message p-0">
+                        <div class="text-message">
+                          I have the photos that you ordered last month, how would you like them sent to you?
+                        </div>
+                        <div class="name-time">
+                          Jae Chun · 1d
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="list-group-item d-flex align-items-center">
+                      <div class="icon rounded-circle me-3 position-relative">
+                        <img src="../img/4.png" class="rounded-circle">
+                        <span class="badge position-absolute top-0 start-100 translate-middle p-1 bg-warning border border-white rounded-circle">
+                      </div>
+                      <div class="message p-0">
+                        <div class="text-message">
+                          Last month's report looks great, I am very happy with the progress so far, keep up the good work!
+                        </div>
+                        <div class="name-time">
+                          Morgan Alvarez · 2d
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="list-group-item d-flex align-items-center">
+                      <div class="icon rounded-circle me-3 position-relative">
+                        <img src="../img//Home_Stella_Round.png" class="rounded-circle">
+                        <span class="badge position-absolute top-0 start-100 translate-middle p-1 border border-white rounded-circle" style="background-color: #1cc88a;">
+                      </div>
+                      <div class="message p-0">
+                        <div class="text-message">
+                          Last month's report looks great, I am very happy with the progress so far, keep up the good work!
+                        </div>
+                        <div class="name-time">
+                          Morgan Alvarez · 2d
+                        </div>
+                      </div>
+                    </li>
+
+
+                    </ul>
+
+                    <div class="card-footer bg-white text-center">
+                      <a href="#">Read More Messages</a>
+                     </div>
+                  </div>
+            
+              </div> 
+            </div>
+          
+          </div>
+
+          <div class="dropdown profile-dropdown">
+            
+            <button class="btn dropdown-toggle d-flex p-0 me-2" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+              <div class="profile d-flex align-items-center ps-2">
+                <div class="profile-name me-2 ms-3">Douglas McGee</div>
+                <div class="profile-img">
+                  <img src="../img/male-avatar-profile-icon-round-man-face-vector-18307187.jpg" class="rounded-circle">
+                </div>
+              </div>
+            </button>
+              
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+               
+                <ul class="list-unstyled m-0">
+                  <li><a class="dropdown-item d-flex align-items-center" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#D1D3E2" class="bi bi-person-fill" viewBox="0 0 16 16">
+                      <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                    </svg>
+                    Profile
+                  </a></li>
+                  <li><a class="dropdown-item d-flex align-items-center" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#D1D3E2" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                      <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+                    </svg>
+                    Settings
+                  </a></li>
+                  <li><a class="dropdown-item d-flex align-items-center" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#D1D3E2" class="bi bi-list-ul" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                    </svg>
+                    Activity Log
+                  </a></li>
+
+                  <hr class="my-2">
+
+                  <li><a class="dropdown-item d-flex align-items-center" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#D1D3E2" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
+                      <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                    </svg>
+                    Logout
+                  </a></li>
+
+                </ul>
+
+              </div>
+
+          </div>
+                   
+        </nav>
+
+        <div class="container content">
+          <div class="row header my-4 d-flex align-items-center">
+
+            <div class="col">
+              <h1 class="header float-start fs-2" style="font-family: 'Nunito';">Dashboard</h1>    
+            </div>
+  
+              <div class="col">
+                <button type="button" class="btn d-flex align-items-center float-end px-2 py-1 download-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-download me-1" viewBox="0 0 16 16">
+                    <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                    <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                  </svg>
+                  Generate Report
+                </button>   
+              </div>
+              
+          </div>
+
+          <div class="row stats">
+            
+            <div class="col-xl col-md-6 mb-4">
+              <div class="stats-card d-flex bg-white rounded border shadow" style="border-left-color:#4E73DF !important;">      
+                <div class="stats-text">
+                  <p class="stat" style="color: #4E73DF;">earnings (monthly)</p>
+                  <p class="stat-value">$40,000</p>
+                </div>
+
+                <div class="stats-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#DDDFEB" class="bi bi-calendar-fill" viewBox="0 0 16 16">
+                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5h16V4H0V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5z"/>
+                  </svg>
+                </div>
+                 
+              </div>
+            </div>
+
+            <div class="col-xl col-md-6 mb-4">
+              <div class="stats-card d-flex bg-white rounded border shadow" style="border-left-color:#1cc88a !important;">      
+                <div class="stats-text">
+                  <p class="stat" style="color: #1cc88a;">earnings (annual)</p>
+                  <p class="stat-value">$215,000</p>
+                </div>
+
+                <div class="stats-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#DDDFEB" class="bi bi-currency-dollar" viewBox="0 0 16 16">
+                    <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl col-md-6 mb-4">
+              <div class="stats-card d-flex bg-white rounded border shadow" style="border-left-color:#36B9CC !important;">      
+                <div class="stats-text">
+                  <p class="stat" style="color: #36B9CC;">tasks</p>
+                  <p class="stat-value">50%</p>
+                </div>
+
+                <div class="progress rounded-pill mx-3 mt-4" style="width: 100%; height: 8px;">
+                  <div class="progress-bar" role="progressbar" style="width: 50%; background-color: #36B9CC;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+
+                <div class="stats-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#DDDFEB" class="bi bi-clipboard2-fill" viewBox="0 0 16 16">
+                    <path d="M9.5 0a.5.5 0 0 1 .5.5.5.5 0 0 0 .5.5.5.5 0 0 1 .5.5V2a.5.5 0 0 1-.5.5h-5A.5.5 0 0 1 5 2v-.5a.5.5 0 0 1 .5-.5.5.5 0 0 0 .5-.5.5.5 0 0 1 .5-.5h3Z"/>
+                    <path d="M3.5 1h.585A1.498 1.498 0 0 0 4 1.5V2a1.5 1.5 0 0 0 1.5 1.5h5A1.5 1.5 0 0 0 12 2v-.5c0-.175-.03-.344-.085-.5h.585A1.5 1.5 0 0 1 14 2.5v12a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-12A1.5 1.5 0 0 1 3.5 1Z"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl col-md-6 mb-4">
+              <div class="stats-card d-flex bg-white rounded border shadow" style="border-left-color:#F6C23E !important;">      
+                <div class="stats-text">
+                  <p class="stat" style="color: #F6C23E;">pending requests</p>
+                  <p class="stat-value">18</p>
+                </div>
+
+                <div class="stats-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#DDDFEB" class="bi bi-chat-fill" viewBox="0 0 16 16">
+                    <path d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15z"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="row cards">
+
+            <div class="col-lg-6 col-md-12">
+              <div class="row">
+                <div class="col-12 p-0">
+                  <div class="card section projects shadow">
+                    <div class="card-header">Projects</div>
+                    <div class="card-body">
+        
+                      <h6>Server Migration <span style="float: right;">20%</span></h6>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 20%; background-color: #e74a3b;" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+        
+                      <h6>Sales Tracking <span style="float: right;">40%</span></h6>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 40%; background-color: #F6C23E;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+        
+                      <h6>Customer Database <span style="float: right;">60%</span></h6>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 60%; background-color: #4E73DF;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+        
+                      <h6>Payout Details <span style="float: right;">80%</span></h6>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 80%; background-color: #36B9CC;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+        
+                      <h6>Account Setup <span style="float: right;">Complete!</span></h6>
+                      <div class="progress mb-0">
+                        <div class="progress-bar" role="progressbar" style="width: 100%; background-color: #1cc88a;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>       
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col p-0 color-palette">
+                  <div class="row mt-4">
+                   
+                    <div class="col-lg-6 left">
+                      <div class=" colors card" style="background-color:#4e73df;">
+                        <div class="card-body">
+                          <p class="color-name">Primary</p>
+                          <p class="hex-num" style="color: #A7B9EF;"> #4e73df</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6 right">
+                      <div class=" colors card" style="background-color:#1cc88a;">
+                        <div class="card-body">
+                          <p class="color-name">Success</p>
+                          <p class="hex-num" style="color: #8EE4C5;"> #1cc88a</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6 left">
+                      <div class=" colors card" style="background-color:#36b9cc;">
+                        <div class="card-body">
+                          <p class="color-name">Info</p>
+                          <p class="hex-num" style="color: #9BDCE6;">#36b9cc</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6 right">
+                      <div class=" colors card" style="background-color:#f6c23e;">
+                        <div class="card-body">
+                          <p class="color-name">Warning</p>
+                          <p class="hex-num" style="color: #FBE19F;">#f6c23e</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6 left">
+                      <div class=" colors card" style="background-color:#e74a3b;">
+                        <div class="card-body">
+                          <p class="color-name">Danger</p>
+                          <p class="hex-num" style="color: #F3A59D;">#e74a3b</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6 right">
+                      <div class=" colors card" style="background-color:#858796;">
+                        <div class="card-body">
+                          <p class="color-name">Secondary</p>
+                          <p class="hex-num" style="color: #C2C3CA;">#858796</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6 left">
+                      <div class=" colors card" style="background-color:#f8f9fc;">
+                        <div class="card-body">
+                          <p class="color-name" style="color:#858796">Light</p>
+                          <p class="hex-num" style="color: #7C7C7E;">#f8f9fc</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6 right">
+                      <div class=" colors card" style="background-color:#5a5c69;">
+                        <div class="card-body">
+                          <p class="color-name">Dark</p>
+                          <p class="hex-num" style="color: #ADAEB4;">#5a5c69</p>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12">
+              <div class="row">
+                <div class="col p-0">
+                  <div class="card section illustrations shadow">
+                    <div class="card-header">Illustrations</div>
+                    <div class="card-body">
+                      <img src="../img/undraw_posting_photo.svg" class="img-fluid d-block my-3 mx-auto" style="width: 100%; max-width: 352px;">
+                      <p>
+                        Add some quality, svg illustrations to your project courtesy of <a href="https://undraw.co/">unDraw</a>, a constantly updated collection of beautiful svg images that you can use completely free and without attribution!
+                      </p>
+                      <a href="https://undraw.co/">Browse Illustrations on unDraw →</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+                <div class="col p-0 mt-4">
+                  <div class="card section illustrations shadow">
+                    <div class="card-header">Development Approach</div>
+                    <div class="card-body">
+                      <p class="mb-3">
+                        SB Admin 2 makes extensive use of Bootstrap 4 utility classes in order to reduce CSS bloat and poor page performance. Custom CSS classes are used to create custom components and custom utility classes.
+                      </p>
+                      <p>
+                        Before working with this theme, you should become familiar with the Bootstrap framework, especially the utility classes.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+         
+
+            </div>
+
+          </div>
+            
+           
+                   
+        </div>
+
+      </div>
+      
+    </div>
+
+    </div>
+         
+      <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+    </body>
+
+  </html>
